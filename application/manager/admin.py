@@ -7,7 +7,10 @@ class locationStyle(admin.ModelAdmin):
 
 class contentStyle(admin.ModelAdmin):
 	filter_horizontal = ('slides','map_locations',"sponsors",)
-	
+
+class slidesStyle(admin.ModelAdmin):
+	list_display = ('title','quote_text','order','show_logo')
+	list_editable = ('order','show_logo')
 
 admin.site.register(Content,contentStyle)
 admin.site.register(Slide)
