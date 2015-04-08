@@ -13,6 +13,7 @@ node_modules
 settings.py
 .DS_Store
 /.sass-cache
+application/static/.sass-cache/*
 /env/*
 /build/*
 /node_modules/*
