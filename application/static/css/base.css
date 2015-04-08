@@ -228,6 +228,9 @@ body, html {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
+p {
+  margin: 0; }
+
 a {
   color: #fff;
   text-decoration: none; }

@@ -87,6 +87,10 @@ body, html{
 	@include vendorize(font-smoothing,antialiased);
 }
 
+p{
+	margin: 0;
+}
+
 a{
 	color: #fff;
 	text-decoration: none;
