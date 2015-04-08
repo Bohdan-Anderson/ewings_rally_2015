@@ -6,6 +6,7 @@
 *.pyc
 *.psd
 *.sqlite3
+*.db
 *.log
 *.pdf
 *.xml
