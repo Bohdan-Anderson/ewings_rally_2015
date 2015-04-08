@@ -13,6 +13,6 @@ class slidesStyle(admin.ModelAdmin):
 	list_editable = ('order','show_logo')
 
 admin.site.register(Content,contentStyle)
-admin.site.register(Slide)
+admin.site.register(Slide,slidesStyle)
 admin.site.register(Logos)
 admin.site.register(location,locationStyle)
