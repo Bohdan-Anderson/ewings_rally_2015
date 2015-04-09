@@ -310,6 +310,10 @@ body #djDebug {
   color: #777; }
 #sponsors #bronze {
   color: #d8741a; }
+  #sponsors #bronze span {
+    padding: 1em;
+    color: #fff;
+    display: inline-block; }
 
 .donate-button {
   color: #fff;

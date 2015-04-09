@@ -310,6 +310,10 @@ body #djDebug {
   color: #777; }
 #sponsors #bronze {
   color: #d8741a; }
+  #sponsors #bronze span {
+    padding: 1em;
+    color: #fff;
+    display: inline-block; }
 
 .donate-button {
   color: #fff;
@@ -749,7 +753,8 @@ ul {
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-      border-radius: 50%; }
+      border-radius: 50%;
+      display: none; }
   #about #right {
     width: 62.5%;
     padding-top: 300px;

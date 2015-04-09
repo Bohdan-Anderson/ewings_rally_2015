@@ -376,7 +376,7 @@ ul{
 			width: 15em;
 			height: 15em;
 			@include vendorize(border-radius,50%);
-
+			display: none;
 		}
 	}
 	#right{
