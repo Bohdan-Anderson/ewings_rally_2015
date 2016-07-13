@@ -269,28 +269,24 @@ a {
   100% {
     display: inline;
     opacity: 0; }
-
   0% {
     opacity: 1; } }
 @-moz-keyframes fadeOut {
   100% {
     display: inline;
     opacity: 0; }
-
   0% {
     opacity: 1; } }
 @-ms-keyframes fadeOut {
   100% {
     display: inline;
     opacity: 0; }
-
   0% {
     opacity: 1; } }
 @keyframes fadeOut {
   100% {
     display: inline;
     opacity: 0; }
-
   0% {
     opacity: 1; } }
 body #djDebug {
@@ -420,79 +416,67 @@ ul {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
 @-moz-keyframes fadeIn {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
 @-ms-keyframes fadeIn {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
 @keyframes fadeIn {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
 @-webkit-keyframes animateIn {
   0% {
     left: -100%; }
-
   100% {
     left: 0%; } }
 @-moz-keyframes animateIn {
   0% {
     left: -100%; }
-
   100% {
     left: 0%; } }
 @-ms-keyframes animateIn {
   0% {
     left: -100%; }
-
   100% {
     left: 0%; } }
 @keyframes animateIn {
   0% {
     left: -100%; }
-
   100% {
     left: 0%; } }
 @-webkit-keyframes animateOut {
   100% {
     left: -100%; }
-
   0% {
     left: 0%; } }
 @-moz-keyframes animateOut {
   100% {
     left: -100%; }
-
   0% {
     left: 0%; } }
 @-ms-keyframes animateOut {
   100% {
     left: -100%; }
-
   0% {
     left: 0%; } }
 @keyframes animateOut {
   100% {
     left: -100%; }
-
   0% {
     left: 0%; } }
 #nav-button {
   position: fixed;
   z-index: 100;
-  left: -28px;
+  left: -30px;
   -webkit-transition: left 0.5s;
   -moz-transition: left 0.5s;
   -ms-transition: left 0.5s;
@@ -678,11 +662,11 @@ ul {
       -ms-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       -o-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      -webkit-text-shadow: 0px 0px 10px black;
-      -moz-text-shadow: 0px 0px 10px black;
-      -ms-text-shadow: 0px 0px 10px black;
-      -o-text-shadow: 0px 0px 10px black;
-      text-shadow: 0px 0px 10px black; }
+      -webkit-text-shadow: 0px 0px 10px #000;
+      -moz-text-shadow: 0px 0px 10px #000;
+      -ms-text-shadow: 0px 0px 10px #000;
+      -o-text-shadow: 0px 0px 10px #000;
+      text-shadow: 0px 0px 10px #000; }
     #carousel #quote-container svg {
       max-width: 275px;
       width: 50%;
@@ -1002,11 +986,11 @@ ul {
       -ms-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       -o-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      -webkit-text-shadow: 0px 0px 10px black;
-      -moz-text-shadow: 0px 0px 10px black;
-      -ms-text-shadow: 0px 0px 10px black;
-      -o-text-shadow: 0px 0px 10px black;
-      text-shadow: 0px 0px 10px black;
+      -webkit-text-shadow: 0px 0px 10px #000;
+      -moz-text-shadow: 0px 0px 10px #000;
+      -ms-text-shadow: 0px 0px 10px #000;
+      -o-text-shadow: 0px 0px 10px #000;
+      text-shadow: 0px 0px 10px #000;
       display: table-cell;
       text-align: center;
       vertical-align: middle; }
@@ -1142,49 +1126,41 @@ ul {
 @-webkit-keyframes scrollInMenue {
   0% {
     bottom: -100%; }
-
   100% {
     bottom: 0%; } }
 @-moz-keyframes scrollInMenue {
   0% {
     bottom: -100%; }
-
   100% {
     bottom: 0%; } }
 @-ms-keyframes scrollInMenue {
   0% {
     bottom: -100%; }
-
   100% {
     bottom: 0%; } }
 @keyframes scrollInMenue {
   0% {
     bottom: -100%; }
-
   100% {
     bottom: 0%; } }
 @-webkit-keyframes scrollOutMenue {
   0% {
     bottom: 0%; }
-
   100% {
     bottom: -100%; } }
 @-moz-keyframes scrollOutMenue {
   0% {
     bottom: 0%; }
-
   100% {
     bottom: -100%; } }
 @-ms-keyframes scrollOutMenue {
   0% {
     bottom: 0%; }
-
   100% {
     bottom: -100%; } }
 @keyframes scrollOutMenue {
   0% {
     bottom: 0%; }
-
   100% {
     bottom: -100%; } }
 .dis-none > div {
@@ -1220,11 +1196,13 @@ ul {
     -ms-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     -o-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    -webkit-text-shadow: 0px 0px 10px black;
-    -moz-text-shadow: 0px 0px 10px black;
-    -ms-text-shadow: 0px 0px 10px black;
-    -o-text-shadow: 0px 0px 10px black;
-    text-shadow: 0px 0px 10px black; }
+    -webkit-text-shadow: 0px 0px 10px #000;
+    -moz-text-shadow: 0px 0px 10px #000;
+    -ms-text-shadow: 0px 0px 10px #000;
+    -o-text-shadow: 0px 0px 10px #000;
+    text-shadow: 0px 0px 10px #000; }
     #loading-screen > div img {
       width: 50%;
       height: auto; }
+
+/*# sourceMappingURL=screen.css.map */

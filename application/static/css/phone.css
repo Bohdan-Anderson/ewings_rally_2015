@@ -269,28 +269,24 @@ a {
   100% {
     display: inline;
     opacity: 0; }
-
   0% {
     opacity: 1; } }
 @-moz-keyframes fadeOut {
   100% {
     display: inline;
     opacity: 0; }
-
   0% {
     opacity: 1; } }
 @-ms-keyframes fadeOut {
   100% {
     display: inline;
     opacity: 0; }
-
   0% {
     opacity: 1; } }
 @keyframes fadeOut {
   100% {
     display: inline;
     opacity: 0; }
-
   0% {
     opacity: 1; } }
 body #djDebug {
@@ -555,11 +551,11 @@ li {
       -ms-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       -o-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      -webkit-text-shadow: 0px 0px 10px black;
-      -moz-text-shadow: 0px 0px 10px black;
-      -ms-text-shadow: 0px 0px 10px black;
-      -o-text-shadow: 0px 0px 10px black;
-      text-shadow: 0px 0px 10px black; }
+      -webkit-text-shadow: 0px 0px 10px #000;
+      -moz-text-shadow: 0px 0px 10px #000;
+      -ms-text-shadow: 0px 0px 10px #000;
+      -o-text-shadow: 0px 0px 10px #000;
+      text-shadow: 0px 0px 10px #000; }
       @media screen and (orientation: portrait) {
         #carousel #quote-container .quote {
           margin: 0 1em 0 1em; } }
@@ -883,3 +879,5 @@ li {
 .back-white {
   background: #ff572b;
   background-color: #ff572b; }
+
+/*# sourceMappingURL=phone.css.map */

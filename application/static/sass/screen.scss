@@ -121,7 +121,7 @@ ul{
 #nav-button{
 	position: fixed;
 	z-index: 100;
-	left: -28px;
+	left: -30px;
 	@include vendorize(transition,left 0.5s);
 	top: 2em;
 	width: 125px;
