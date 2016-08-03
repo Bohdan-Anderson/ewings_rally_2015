@@ -7,13 +7,13 @@
 	<meta charset="utf-8"/>
 	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
 	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0,user-scalable=no" name="viewport"/>
-	<meta property="og:title"content="Rally for the Cure 2015" />
+	<meta property="og:title"content="Rally for the Cure 2016" />
 
 	<meta property="og:site_name" content="Rally for the Cure"/>
 
 	<meta property="og:url" content="http://www.rallyforthecure.ca/ " />
 
-	<meta property="og:description" content="On Sunday September 13, 2015 The Ewings Cancer Foundation of Canada (ECFC) will host its 6th Annual Rally for the Cure, a charity fundraising event featuring an Air and Car Rally with a treasure hunt theme. The Car Rally will take place throughout the York Region as the Air Rally takes place simultaneously from six participating Municipal Airports." />
+	<meta property="og:description" content="On Sunday September 11, 2016 The Ewings Cancer Foundation of Canada (ECFC) will host its 6th Annual Rally for the Cure, a charity fundraising event featuring an Air and Car Rally with a treasure hunt theme. The Car Rally will take place throughout the York Region as the Air Rally takes place simultaneously from six participating Municipal Airports." />
 
 	<meta property="og:image" content="http://also-static.com/rallyforthecure/media/uploaded/img/landing-2_2.jpg" />
 	
@@ -89,15 +89,15 @@
 </div>
 
 
-	<script type="text/javascript">
-		var imagesToPreLoad = [{% for slide in slides %}"{{ MEDIA_URL }}{{slide.background_image}}"{% if not forloop.last%},{% endif %}{% endfor %}]
-	</script>
+{% comment %}
 	<div id="carousel" class="section">
+		
 		<div id="carousel-nav">
 			{% for slide in slides %}
 				<div class="slide-nav {% if forloop.first %}active{% endif %}" id="{{forloop.counter}}"></div>
 			{% endfor %}
 		</div>
+
 		{% for slide in slides %}
 		<div class="slide {% if forloop.first %}heighlight{% else %} off{% endif %}">
 			<div class="slide-container">
@@ -127,11 +127,36 @@
 			</div>
 		</div>
 		{% endfor %}
-	</div>
 
+	</div>
+{% endcomment %}
+<div id="new-carousel">
+	<div id="new-carousel-container">
+		{% for slide in slides %}
+			<div class="new-slide" style="background-image: url('{{ MEDIA_URL }}{{slide.background_image}}')">
+				<div class="slide-text">
+					{% if forloop.first %}
+					<div class="logo-slide">
+						<div class="rally-logo">
+							{% include "logo.html" %}
+						</div>
+					</div>
+					{% else %}
+					<div class="quote-container">
+						{% if slide.show_logo %}
+							{% include "logo.html" %}
+						{% endif %}
+						<p class="quote">{{slide.quote_text|safe}}</p>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
 <div id="scroller-container">
 	<div id="container">
-		<div id="spacer" class="section"></div>
+		{% comment %}<div id="spacer" class="section"></div>{% endcomment %}
 		<div id="about" class="section">
 			<div id="dimond-container">
 				<div id="dimond">
@@ -323,6 +348,9 @@
 	</div>
 </div>
 <script type="text/javascript">
+	var imagesToPreLoad = [{% for slide in slides %}"{{ MEDIA_URL }}{{slide.background_image}}"{% if not forloop.last%},{% endif %}{% endfor %}]
+</script>
+<script type="text/javascript">
 	{% if desktop%}
 	var deskTop = true,
 		tablet = false,
@@ -341,7 +369,12 @@
 	{% endfor %}
 	]
 </script>
+
+{% comment %}
 <script type="text/javascript" src="{% static "js/min/main.js"%}"></script>
+{% endcomment %}
+<script type="text/javascript" src="{% static "js/lib/slick.min.js"%}"></script>
+<script type="text/javascript" src="{% static "js/main.js"%}"></script>
 </body>
 </html>
 
